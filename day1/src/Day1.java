@@ -32,7 +32,7 @@ public class Day1 {
         Queue<Integer> list1 = new PriorityQueue<>();
         Queue<Integer> list2 = new PriorityQueue<>();
 
-        try (Scanner scanner = new Scanner(input)){
+        try(Scanner scanner = new Scanner(input)){
             while(scanner.hasNextInt()) {
                 list1.add(scanner.nextInt());
 
@@ -40,7 +40,7 @@ public class Day1 {
                     list2.add(scanner.nextInt());
                 }
             }
-        } catch (IOException e) {
+        } catch(IOException e) {
             throw new RuntimeException(e);
         }
 
